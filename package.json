@@ -19,6 +19,7 @@
     "@wdio/mocha-framework": "^9.29.1",
     "@wdio/spec-reporter": "^9.29.1",
     "expect-webdriverio": "^5.7.0",
+    "selenium-webdriver": "^4.46.0",
     "typescript": "^7.0.2"
   }
 }
