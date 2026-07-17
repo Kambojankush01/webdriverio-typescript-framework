@@ -1,3 +1,5 @@
+import Config from "./src/config/Config";
+
 export const config: WebdriverIO.Config = {
  
     runner: 'local',
@@ -7,7 +9,7 @@ export const config: WebdriverIO.Config = {
     specs: [
         './src/tests/**/*.ts'
     ],
-    baseUrl:'https://opensource-demo.orangehrmlive.com',
+    baseUrl: Config.baseUrl,
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'

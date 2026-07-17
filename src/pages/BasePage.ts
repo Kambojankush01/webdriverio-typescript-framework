@@ -6,7 +6,12 @@ export default class BasePage{
      * open('/login')
      */
     public async open(path:string): Promise<void>{
+        console.log("BASE URL:", browser.options.baseUrl);
+        console.log("PATH:", path);
+
         await browser.url(path);
+
+        console.log("CURRENT URL:", await browser.getUrl());
     }
 
     // Click an element

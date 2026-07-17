@@ -1,5 +1,6 @@
 import BasePage from "./BasePage";
 import DashboardPage from "./DashboardPage";
+import Urls from "../constants/Urls";
 
 class LoginPage extends BasePage{
 
@@ -27,7 +28,7 @@ class LoginPage extends BasePage{
     // business methods
     
     public async open(): Promise<void>{
-        await super.open('/web/index.php/auth/login');
+        await super.open(Urls.LOGIN);
     }
 
     public async login(username:string,password:string): Promise<typeof DashboardPage>{
